@@ -1,0 +1,99 @@
+
+.productWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--main-padding);
+    @media screen and (max-width:600px) {
+           padding: var(--phone-padding);
+        }
+    .productsHolder{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        .productBox {
+            @media screen and (max-width:600px) {
+                    width: 100%;
+                    gap: 0px;
+                }
+                
+            width: 40%;
+            background: #FFFFFF;
+                box-shadow: 0px 1px 6px rgba(61, 65, 84, 0.15);
+                border-radius: 5px;
+               
+               
+            .productImage {
+                    width: 100%;
+                    height: 250px;
+                    position: relative;
+                    border-radius: 5;
+                    img{
+                        border-top-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                    }
+                }
+                .productTitle{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: flex-start;
+                    height: 70px;
+                    padding: 10px 20px;
+                }
+                                
+        }
+        
+    }
+    
+}
+.productsButtonHolder {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width:600px) {
+           flex-direction: column;
+        }
+    gap: 30px;
+    width: calc(80% + 50px);
+    margin-top: 50px;
+    .productLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--psi-orange);
+        width: calc(50% );
+        border: 1px solid transparent;
+        transition: all 300ms ease-in;
+        &:hover{
+            background-color: white;
+            border: 1px solid var(--psi-orange);
+            color: var(--psi-orange);
+        }
+        @media screen and (max-width:600px) {
+                width: 100%;
+            }
+        padding: 10px 20px;
+        
+            border-radius: 4px;
+            color: white;
+            font-family: 'Inter-Medium';
+
+            
+                font-size: 14px;
+                line-height: 16px;
+        .productsCircles {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+}

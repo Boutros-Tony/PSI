@@ -1,0 +1,183 @@
+.mapWrapper{
+    width: 100vw;
+    background-color: var(--psi-dark-blue);
+    height: auto;
+    padding: 50px 0;
+    position: relative;
+    @media screen and (max-width:600px){
+        height: auto;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .blockWrapper{
+        display: block;
+        width: 50%;
+        height: 50%;
+        @media screen and (max-width:600px) {
+                width: 100%;
+            }
+    }
+    .mapCircles{
+        width: 30px;
+        height: 30px;
+        @media screen and (max-width:600px){
+            width: 20px;
+            height: 20px;
+        }
+        background-color: var(--psi-orange);
+        animation: pulse-animation 2s infinite;
+        cursor: pointer;
+        
+        box-shadow: 4px 10px 20px rgba(230, 78, 46,1);
+        div{
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 100%;
+        }
+        
+        border-radius: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.one{
+            top: 35%;
+            right: 50%;
+            
+            @media screen and (max-width:600px){}
+        }
+        &.two {
+             top: 43%;
+              right: 45.5%;
+              
+            @media screen and (max-width:600px) {
+                right: 40%;
+                    top: 44%;
+            }
+                }
+        &.three {
+            top: 48%;
+            right: 41.5%;
+            @media screen and (max-width:600px) {
+                right:33%;
+                top: 48%;
+            }
+        }
+        &.four {
+            top: 43%;
+            right: 32%;
+            @media screen and (max-width:600px) {
+                right: 25%;
+            }
+        }
+    }
+    .locationBox{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 400px;
+        transition: visibility 0.5s, opacity 0.5s linear;
+    &.show {
+            visibility: visible;
+                opacity: 1;
+        }
+    
+        &.hide {
+            
+            visibility: hidden;
+                opacity: 0;
+               
+        }
+        h3{
+            color: var(--psi-dark-blue);
+        }
+        a{
+            @media screen and (max-width:600px) {
+                   font-size: 14px;
+                }
+        }
+
+        .locationCircle{
+            width: 20px;
+            height: 20px;
+            box-shadow: 0px 0px 1px 1px #0000001a;
+            position: absolute;
+            right: 5px;
+            z-index: 5;
+            top: 5px;
+            background-color: var(--psi-orange);
+            border-radius: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+            @media screen and (max-width:600px){
+                font-size: 12px;
+            }
+            color: white;
+            cursor: pointer;
+        }
+        &.one{
+            top: 17%;
+            left: 30%;
+            @media screen and (max-width:600px) {
+                    left: 2%;
+                    top: 5%;
+                    right: 0%;
+                }
+        }
+        &.two{
+            top:45%;
+            left: 30%;
+            @media screen and (max-width:600px) {
+                    left: 2%;
+                    top: 5%;
+                    right: 0%;
+                }
+        }
+         &.three {
+                    top: 60%;
+                   right:  25%;
+                @media screen and (max-width:600px) {
+                        left: 2%;
+                        top: 5%;
+                        right: 0%;
+                    }
+                }
+        &.four{
+            top: 25%;
+            right: 10%;
+            @media screen and (max-width:600px) {
+                    left: 2%;
+                    top: 5%;
+                    right: 0%;
+                }
+        }
+    }
+}
+.show{
+    opacity: 1;
+    display: flex;
+}
+.hide{
+   opacity: 0;
+   display: none;
+}
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(230, 78, 46, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}

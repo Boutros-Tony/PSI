@@ -1,0 +1,13 @@
+{
+  "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/about": "pages/about.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/products": "pages/products.html",
+  "/sustainability": "pages/sustainability.html",
+  "/services": "pages/services.html",
+  "/404": "pages/404.html"
+}

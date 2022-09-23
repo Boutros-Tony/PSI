@@ -1,0 +1,32 @@
+.aboutWrapper{
+    padding: var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    @media screen and (max-width:600px) {
+            padding: var(--phone-padding);
+        }
+    p{
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Inter-medium';
+    }
+    .orangeBg{
+        background-color: var(--psi-orange);
+        text-align: center;
+        color: white;
+        padding: 40px 40px;
+        margin-bottom: 50px;
+        @media screen and (max-width:600px) {
+                padding: 15px;
+            }
+        h3{
+            font-family: 'Inter-medium';
+
+            
+        }
+    }
+
+}

@@ -1,0 +1,61 @@
+.certificateWrapper{
+    display: flex;
+    flex-direction: row;
+    padding: var(--main-padding);
+    height: 600px;
+    @media screen and (max-width:600px){
+        padding: var(--phone-padding);
+        flex-direction: column;
+        height: auto;
+    }
+    .certificateLeftColumn {
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid rgba(0, 0, 0, 0.38);
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+        @media screen and (max-width:600px){
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+            padding-bottom: 20px;
+        }
+        h1{
+            width: 40%;
+            @media screen and (max-width:600px){
+                width: 100%;
+            }
+        }
+        p{
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+            margin-right: 0;
+            padding-right: 150px;
+            width: 100%;
+            @media screen and (max-width:600px){
+                padding-right: 0;
+                padding-bottom: 10px;
+                border-bottom: none;
+            }
+        }
+    }
+    .certificateRightColumn {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            @media screen and (max-width:600px){
+                width: 100%;
+            }
+            div{
+                width: 90%;
+                height: 400px;
+                position: relative;
+                @media screen and (max-width:600px){
+                    height: 300px;
+                }
+            }
+        }
+}

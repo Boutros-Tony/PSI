@@ -1,0 +1,46 @@
+.bannerImgHolder{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    @media screen and (max-width:600px) {
+           height: 180px;
+        }
+    position: relative;
+    .scrollButton{
+        width: 50px;
+        height: 50px;
+        transition: all 300ms ease-in;
+        border: 1px solid var(--psi-orange);
+        svg{
+            fill: white;
+        }
+        &:hover{
+            background-color: white;
+            border: 1px solid var(--psi-orange);
+            svg {
+                    fill: var(--psi-orange);
+                }
+        }
+        @media screen and (max-width:600px) {
+            width: 30px;
+            height: 30px;
+            right: 25px;
+            top: 25px;
+            }
+            
+        background-color: var(--psi-orange);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        position: absolute;
+        right: 100px;
+        top: 50px;
+        z-index: 3;
+        a{width: 100%;height: 100%;display: flex;justify-content: center;
+        align-items: center;}
+    }
+    img {
+        object-fit: cover;
+    }
+}
