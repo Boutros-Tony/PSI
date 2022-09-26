@@ -5,7 +5,7 @@ class MyDocument extends Document {
     render(){
         return <Html lang='en'>
             <Head>
-                 <link rel="icon" href="/favicon.png" />
+                 <link rel="icon" href="/Favicon.png" />
             </Head>
             <body>
                 <Main></Main>
