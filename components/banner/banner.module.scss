@@ -27,6 +27,11 @@
     .buttonsHolder{
         display: flex;
         flex-direction: row;
+       a{
+            @media screen and (max-width:600px) {
+                   margin-top: 0;
+                }
+        }
         a{
             margin-right: 15px;
         }
@@ -40,6 +45,9 @@
     
             a {
                 margin-right: 15px;
+                @media screen and (max-width:600px) {
+                        margin-top: 0;
+                    }
             }
         }
     .bannerImg{

@@ -1,6 +1,7 @@
 import styles from './banner.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import DarkAngle from '../../public/static/dark-angle.svg'
 const Banner = ({title,text1,text2,imgSrc,imgHeight,imgWidth,existButt,existButtHome}) => {
     return (
         <div className={styles.bannerWrapper}>
@@ -16,7 +17,10 @@ const Banner = ({title,text1,text2,imgSrc,imgHeight,imgWidth,existButt,existButt
             }
             {
                 existButtHome ? <div className={styles.buttonsHolderHome}>
-                     <Link href="/products"><a className='main-button-light'>Products</a></Link>
+                    <Link href="/products">
+                        <a className='main-button-light'>Products </a>
+                       
+                    </Link>
                     <Link href="/services"><a className='main-button-light'>Services</a></Link>
                 
             </div> : null
