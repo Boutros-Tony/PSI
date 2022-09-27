@@ -2,7 +2,7 @@ import Head from "next/head";
 import Banner from '../components/banner/banner.component';
 import BannerImg from '../components/banner-image/banner-img.component';
 import styles from '../styles/services.module.scss';
-import Link from 'next/link';
+
 import SourcingIcon from '../public/static/sourcing-icon.svg'
 import OemIcon from '../public/static/oem-services-icon.svg'
 import Purchasing from '../public/static/purchasing-icon.svg'
@@ -107,7 +107,7 @@ const updateObjectInArray = async (event) => {
         {servicesArray.map((service) =>
             <>
 
-                <div  key={service.id} onClick={updateObjectInArray} data-attr={service.id}  style={service.status ? activeClass : null} className={styles.servicesBox}>
+                <div   key={service.id} onClick={updateObjectInArray} data-attr={service.id} className={service.status ? styles.servicesBox  + " " + styles.activeClasss : styles.servicesBox}>
 
 
 

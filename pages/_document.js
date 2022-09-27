@@ -6,9 +6,13 @@ class MyDocument extends Document {
         return <Html lang='en'>
             <Head>
                  <link rel="icon" href="/Favicon.png" />
+                
             </Head>
             <body>
-                <Main></Main>
+                <Main>
+                   
+    
+                </Main>
                 <NextScript/>
             </body>
         </Html>

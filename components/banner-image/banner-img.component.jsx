@@ -12,7 +12,7 @@ const BannerImg = ({imgUrl,sectionLink}) => {
                 
                 
             </div>
-            <Image layout="fill" objectFit="cover"  alt="Psi Image Banner" src={imgUrl}/>
+            <Image priority layout="fill" objectFit="cover"  alt="Psi Image Banner" src={imgUrl}/>
         </div>
     )
 }

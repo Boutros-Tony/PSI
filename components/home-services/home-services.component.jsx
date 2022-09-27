@@ -41,7 +41,7 @@ const HomeServices = () => {
             {services.map((service) => 
             <>
            
-                <div>
+                <div key={service.title}>
                     
                     {service.imageUrl}
                     <h2 className='medium-dark-title'>{service.title}</h2>

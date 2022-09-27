@@ -12,15 +12,15 @@ const Footer = () => {
                 <div className={styles.footerLeftColumn}>
                     <div className={styles.footerLogoHolder}>
                         <Link href="/" >
-                        <WhiteLogo style={{cursor:"pointer"}}/>
+                        <WhiteLogo />
                         </Link>
                     
                     <p className='white-p'>Sourcing goods <br /> accros the world</p>
                     </div>
                     <div className={styles.footerSocialMedia}>
-                    <a target="_blank" rel="noreferrer" href="http://facebook.com"><FacebookIcon/></a>
-                    <a target="_blank" rel="noreferrer" href="http://instagram.com"><InstagramIcon/></a>
-                    <a target="_blank" rel="noreferrer" href="http://facebook.com"><LinkedInIcon/></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/psisourcingintl/"><FacebookIcon/></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/psisourcing/"><InstagramIcon/></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/psisourcing/about/"><LinkedInIcon/></a>
                     </div>
                 </div>
             <div className={styles.footerRightColumn}>

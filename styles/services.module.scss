@@ -19,6 +19,7 @@
             overflow: hidden;
             width: 30%;
             height: 100px;
+            
             min-width: 270px;
             display: flex;
             flex-direction: column;
@@ -28,6 +29,12 @@
             cursor: pointer;
             box-shadow: 0px 1px 6px rgba(61, 65, 84, 0.15);
             border-radius: 15px;
+            &.activeClasss {
+                    height: 400px;
+                    @media screen and (max-width:600px){
+                        height: auto;
+                    }
+                }
             @media screen and (max-width:600px) {
                     width: 100%;
                 }
@@ -64,6 +71,7 @@
             }
             p{
                 margin: 10px 30px;
+                text-align: left;
             }
             .rightIcon{
                     transition: transform .35s ease-in-out;
@@ -84,7 +92,7 @@
 .servicesPar{
     opacity: 0;
     transition: opacity 0.2s ease-in ;
-    overflow: scroll;
+   
 }
 
 .show{
@@ -92,3 +100,4 @@
     display: flex;
     transition: all 0.8s ease-in;
 }
+
