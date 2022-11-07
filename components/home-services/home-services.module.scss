@@ -22,9 +22,10 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        
         div{
             width: 25%;
+            margin: 20px;
             min-width: 250px;
             @media screen and (max-width:600px){
                 width: 100%;

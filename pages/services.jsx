@@ -96,16 +96,18 @@ const updateObjectInArray = async (event) => {
     return (
         <div>
             <Head>
-                <title>Our Services | PSI</title>
+                <title>Import & Logistics Services | PSI | Lebanon</title>
+                <meta name='title' content='Import & Logistics Services | PSI | Lebanon'/>
+                <meta name="description" content="At Premium Sourcing International, Our primary objective is to help you find reliable, cost-effective, and efficient solutions to import goods from overseas. Check our wide range of logistics services to help you get the needed expertise and solutions for your business." />
             </Head>
 
-        <Banner title="Our Services" text1='At PSI our primary objective is to help you find reliable, cost-effective, and efficient solutions to import goods from overseas.' imgSrc='/static/services-icon.png' imgWidth='250' imgHeight="350"/>
-      <BannerImg imgUrl='/static/services-banner.png' sectionLink="services-section"/>
+        <Banner title="Our Services" text1='At PSI our primary objective is to help you find reliable, cost-effective, and efficient solutions to import goods from overseas.' imgSrc='/static/services-icon.svg' imgWidth='250' imgHeight="350"/>
+      <BannerImg imgUrl='/static/services-banner.webp' webImg='/static/services-banner.png' sectionLink="services-section"/>
        <div id="services-section" className={styles.servicesWrapper}>
         <h2 className="big-dark-title">A Safer More Reliable Way To Import Goods</h2>
         <div className={styles.servicesHolder}>
         {servicesArray.map((service) =>
-            <>
+            
 
                 <div   key={service.id} onClick={updateObjectInArray} data-attr={service.id} className={service.status ? styles.servicesBox  + " " + styles.activeClasss : styles.servicesBox}>
 
@@ -127,12 +129,13 @@ const updateObjectInArray = async (event) => {
 
 
 
-            </>
+            
             )}
             </div>
 
 
       </div>
+      
         </div>
     )
 }

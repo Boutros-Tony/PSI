@@ -6,6 +6,15 @@ body {
 scroll-behavior: smooth;
 
 }
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: white;
+  }
+  #__next{
+    background-color: white;
+  }
+}
 .overf {
   overflow: hidden;
     position: fixed;
@@ -27,6 +36,8 @@ a {
   color: var(--psi-dark-blue);
   font-family: 'Inter-bold';
   margin-bottom: 30px;
+
+
 }
 .big-white-title {
   color: var(--white);
@@ -122,25 +133,30 @@ h2{
   }
 }
 
-
 @font-face {
   font-family: 'Inter-light';
-  font-style: light;
-  font-weight: 300;
-  src: url(../public/fonts/Inter-Light.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Inter-medium';
-  font-style: medium;
-  font-weight: 500;
-  src: url(../public/fonts/Inter-Medium.ttf) format('truetype');
+  src: url('../public/fonts/Inter-Light.woff2') format('woff2'),
+    url('../public/fonts/Inter-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
+
+@font-face {
+  font-family: 'Inter-medium';
+  src: url('../public/fonts/Inter-Medium.woff2') format('woff2'),
+    url('../public/fonts/Inter-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Inter-bold';
-  font-style: bold;
-  font-weight: 800;
-  src: url(../public/fonts/Inter-Bold.ttf) format('truetype');
+  src: url('../public/fonts/Inter-Bold.woff2') format('woff2'),
+    url('../public/fonts/Inter-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 :root {
@@ -223,4 +239,32 @@ border-radius: 10px;
 .swiper-button-prev {
   left: 0;
   transform: translateX(-66%);
+}
+
+.success{
+  color: var(--psi-orange);
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid var(--psi-orange);
+  width: 100%;
+  text-align: center;
+}
+.error{
+  color: red;
+}
+.clear {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.response {
+  text-align: center;
+  width: 100%;
+  color: #ff481d;
+  margin-top: 20px;
+}
+.admarg{
+  margin-bottom: 20px !important;
 }

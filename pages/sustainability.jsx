@@ -19,12 +19,14 @@ const Sustainability = () => {
     return (
         <div>
             <Head>
-                <title>Sustainability | PSI</title>
+                <title>Sustainable Solutions | PSI | Logistics Company | Lebanon</title>
+                <meta name='title' content='Sustainable Solutions | PSI | Logistics Company | Lebanon' />
+                <meta name='description' content='Sustainable business practices and policies are integral to our business strategy and embedded in our day-to-day operations.  We are building on our experience and leveraging our expertise to develop a more responsible business.' />
             </Head>
 
         <Banner title="Sustainability" 
-        text1='We are increasing our efforts to reduce the impact of the environment and conduct responsible business practices with the highest ethical standards.' imgSrc='/static/sustainability-icon.png' imgWidth='250' imgHeight="400"/>
-      <BannerImg imgUrl='/static/sustainability-banner.jpg' sectionLink="sustainability-section"/>
+        text1='We are increasing our efforts to reduce the impact of the environment and conduct responsible business practices with the highest ethical standards.' imgSrc='/static/sustainability-icon.svg' imgWidth='250' imgHeight="400"/>
+      <BannerImg imgUrl='/static/sustainability-banner.webp' webImg='/static/sustainability-banner.jpg' sectionLink="sustainability-section"/>
       <div id="sustainability-section" className={styles.abilityWrapper}>
         <h2 className='big-dark-title'>Code of Business Conduct</h2>
     

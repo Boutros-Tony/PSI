@@ -12,25 +12,26 @@ const Footer = () => {
                 <div className={styles.footerLeftColumn}>
                     <div className={styles.footerLogoHolder}>
                         <Link href="/" >
-                        <WhiteLogo />
+                        <img src="/static/psi-white-logo.svg" alt="PSI Logo"/>
                         </Link>
                     
-                    <p className='white-p'>Sourcing goods <br /> accros the world</p>
+                    <p className='white-p'>Sourcing goods <br /> accross the world</p>
                     </div>
                     <div className={styles.footerSocialMedia}>
-                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/psisourcingintl/"><FacebookIcon/></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/psisourcing/"><InstagramIcon/></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/psisourcing/about/"><LinkedInIcon/></a>
+                    <a aria-label="Facebook Link" target="_blank" rel="noreferrer" href="https://www.facebook.com/psisourcingintl/"><FacebookIcon/></a>
+                    <a aria-label="Instagram Link" target="_blank" rel="noreferrer" href="https://www.instagram.com/psisourcing/"><InstagramIcon/></a>
+                    <a aria-label="LinkedIn Link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/psisourcing/about/"><LinkedInIcon/></a>
                     </div>
                 </div>
             <div className={styles.footerRightColumn}>
                 <div className={styles.footerGetInTouch}>
-                <h4 className='white-p'>Get in touch</h4>
-                <a href="mailto:info@psisourcing.com">info@psisourcing</a>
+                <p className='white-p'>Get in touch</p>
+                <a href="mailto:info@psisourcing.com">info@psisourcing.com</a>
                 <a href="tel:+96105450435">+961 5 450435</a>
+                <a href="tel:+96176988285">+961 76 988 285 (WhatsApp)</a>
                 </div>
                 <div className={styles.footerExplore}>
-                <h4 className='white-p'>Explore</h4>
+                <p className='white-p'>Explore</p>
                 <div className={styles.footerSiteMap}>
                     <Link href='/about'>
                         <a className='white-p' >About</a>
@@ -48,14 +49,14 @@ const Footer = () => {
                          <a className='white-p' >Contact</a>
                     </Link>
                 </div>
-                <a className='white-p' target="_blank" rel="noreferrer" href="https://goo.gl/maps/fS9g6dUeYWVhKfow7">Hazmieh, Camilia Building, 3rd Floor</a>
+               
                 </div>
                 
             </div>
              </div>
             <div className={styles.footerEnd}>
-                <p className='white-p'>© 2022 PSI</p>
-                <a target="_blank" rel="noreferrer" className='white-p' href="https://creativecouple.com">Site by creative couple</a>
+                <p className='white-p'>© 2023 PSI</p>
+                
            
             </div>
             

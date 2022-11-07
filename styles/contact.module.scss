@@ -16,12 +16,12 @@
     h3{
         margin-bottom: 20px;
     }
-
+   
     p,a {
         margin-bottom: 5px;
         max-width: 60%;
         transition: opacity 300ms ease-in;
-        
+           
             &:hover {
                 opacity: 0.6;
             }
@@ -60,7 +60,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+       
         
         input {
             width: 48%;
@@ -68,7 +68,8 @@
             border-radius: 5px;
             border: none;
             padding: 15px;
-            @media screen and (max-width:600px){
+            margin: 10px;
+            @media screen and (max-width:1250px){
                 width: 100%;
             }
         }
@@ -76,7 +77,9 @@
             background-color: #EEF5FC;
             border: none;
             padding: 15px;
-            width: 98%;
+            margin: 10px;
+            width: 97.5%;
+            max-width: 97.5%;
             border-radius: 5px;
             font-family: 'Inter-Medium';
         }
@@ -108,13 +111,4 @@
     @media screen and (max-width:600px) {
         display: none;
     }
-}
-
-.success{
-    color: var(--psi-orange);
-    font-size: 18px;
-    padding: 20px;
-    border: 1px solid var(--psi-orange);
-    width: 100%;
-    text-align: center;
 }

@@ -9,26 +9,32 @@ import ConsultingIcon from '../../public/static/consulting-icon.svg'
 const HomeServices = () => {
     const services = [
         {
+            id:1,
             title:"Sourcing",
             imageUrl: <SourcingIcon/>
         },
         {
+            id:2,
             title:"OEM Services",
             imageUrl: <OemIcon/>
         },
         {
+            id:3,
             title:"Purchasing",
             imageUrl: <Purchasing/>
         },
         {
+            id:4,
             title:"Quality Management",
             imageUrl: <QualityIcon/>
         },
         {
+            id:5,
             title:"Procurement Consulting",
             imageUrl: <ConsultingIcon/>
         },
         {
+            id:6,
             title:"Shipping & Coordination",
             imageUrl: <ShippingIcon/>
         }
@@ -39,9 +45,9 @@ const HomeServices = () => {
             <h1 className='big-dark-title'>Our Services</h1>
              <div className={styles.homeServicesHolder}>
             {services.map((service) => 
-            <>
+            
            
-                <div key={service.title}>
+                <div key={service.id}>
                     
                     {service.imageUrl}
                     <h2 className='medium-dark-title'>{service.title}</h2>
@@ -50,11 +56,11 @@ const HomeServices = () => {
                 
             
             
-            </>
+            
             )}
             </div>
             <Link href='/services'>
-            <a className='main-button'>Learn More</a>
+            <a aria-label="Learn more" className='main-button'>Learn More</a>
             </Link>
         </div>
     )

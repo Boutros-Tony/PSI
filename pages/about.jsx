@@ -7,12 +7,14 @@ const About = () => {
         
         <div>
             <Head>
-                <title>About Us | PSI</title>
+                <title>Premium Sourcing International | About Us | Lebanon</title>
+         <meta name='title' content='Premium Sourcing International | About Us | Lebanon'/>
+        <meta name="description" content="Premium Sourcing International is a reputable provider of product sourcing, importing, quality management and OEM services. Partner with us to import quality products at competitively prices." />
             </Head>
         <Banner title="PSI: Premium Sourcing International" text1='PSI provides a comprehensive range of procurement, purchasing, and logistic services to businesses that want to experience the cost-related advantages of sourcing products from overseas.' 
         text2="Our primary objective is to constantly remain one step ahead in dealing with market changes and needs by creating new opportunities and adapting to changes.
-We offer a one-stop solution to businesses of all sizes operating across a broad spectrum of industries. We rely on our extensive network as well as our demonstrated expertise in meeting the needs of a diverse range of businesses." imgSrc='/static/about-icon.png' imgWidth='250' imgHeight="500"/>
-        <BannerImg imgUrl='/static/about-banner.jpg' sectionLink="about-section"/>
+We offer a one-stop solution to businesses of all sizes operating across a broad spectrum of industries. We rely on our extensive network as well as our demonstrated expertise in meeting the needs of a diverse range of businesses." imgSrc='/static/about-icon.svg' imgWidth='250' imgHeight="500"/>
+        <BannerImg imgUrl='/static/about-banner.webp' webImg='/static/about-banner.jpg' sectionLink="about-section"/>
         <div id="about-section" className={styles.aboutWrapper}>
             <h2 className='big-dark-title'>Our Vision</h2>
             <div className={styles.orangeBg}>

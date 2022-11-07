@@ -12,13 +12,13 @@ const Map = () => {
     return (
         <div className={styles.mapWrapper}>
             <div className={styles.blockWrapper}>
+           
         <Image alt='PSI Locations' 
                 layout='responsive'
                 width={2}
                 height={1}
                 
-                placeholder='blur'
-                blurDataURL
+                priority
                 src={Mape}/>
             </div>
             
@@ -35,14 +35,14 @@ const Map = () => {
                 </div>
                 <div className={styles.locationBox + " " + styles.two + " " + (location1 ? styles.show : styles.hide)}>
                     <h3>Premium Sourcing International <br /> (Offshore) SAL</h3>
-                    <a className='dark-p' >Operation offices: Camelia One building, 3rd Fl.Saiid Freiha Street, Hazmieh - Lebanon</a>
+                    <a className='dark-p' >Operation offices: Camelia One Building, 3rd Fl. <br/>Saiid Freiha Street, Hazmieh - Lebanon</a>
                     <a className='dark-p' href="tel:+961 5 450 435">Tel: +961 5 450 435, Mob. & WhatsApp: +961 76 988 285</a>
                     <a className='dark-p' href="mailto:Lebanon@psisourcing.com">email: Lebanon@psisourcing.com</a>
                     <div onClick={() => setLocation1(!location1)} className={styles.locationCircle}>X</div>
                 </div>
                 <div className={styles.locationBox + " " + styles.three + " " + (location2 ? styles.show : styles.hide)}>
                     <h3>Premium Sourcing <br /> International FZ-LLC</h3>
-                    <a className='dark-p' >Al Hamra Industrial Zone FZ A2-210A RAK – United Arab Emirates</a>
+                    <a className='dark-p' >Al Hamra Industrial Zone FZ A2-210A RAK <br/> United Arab Emirates</a>
                     <a className='dark-p' href="tel:+971561514582">tel: +971 56 151 4582</a>
                     <a className='dark-p' href="mailto:UAE@psisourcing.com">email: UAE@psisourcing.com</a>
                     <div onClick={() => setLocation2(!location2)} className={styles.locationCircle}>X</div>
